@@ -1,12 +1,9 @@
 # VotoEscolar (aka SchoolVote)
 
-
-
 ## 🔧 Stack
 
 - Vite + React 18 + TypeScript 5
-- Tailwind CSS 3 + shadcn-ui (Radix primitives)
-- TanStack Query for data fetching
+- Tailwind CSS 3 + shadcn-ui
 - Supabase (PostgreSQL, Auth, Edge Functions)
 
 ## ✅ Prerequisites
@@ -18,7 +15,7 @@
 ## 🚀 Getting started (development)
 
 ```powershell
-git clone <YOUR_GIT_URL>
+git clone https://github.com/diogomufasa/voto-escolar-app
 cd <YOUR_PROJECT_NAME>
 npm install
 
@@ -27,8 +24,6 @@ Copy-Item .env.example .env
 
 npm run dev
 ```
-
-The dev server runs on http://localhost:5173 by default.
 
 ## 🔐 Environment variables
 
@@ -63,5 +58,5 @@ Keep sensitive keys (service role, JWT secrets) on the server only—never expos
 
 - Always test on a staging project before touching production and back up your database first.
 
-Happy shipping! :rocket:
+:rocket:
 
