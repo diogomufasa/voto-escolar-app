@@ -50,18 +50,6 @@ Keep sensitive keys (service role, JWT secrets) on the server only—never expos
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run ESLint across the project |
 
-## 🧪 Quality gates
-
-Run these before every merge/release:
-
-```powershell
-npm install
-npm run lint
-npm run build
-```
-
-Add tests under `src/` (e.g., Vitest, React Testing Library) and wire them into CI as the codebase grows.
-
 ## 🗄️ Supabase workflow
 
 - Track schema changes with SQL migrations in `supabase/migrations/`.
@@ -74,31 +62,6 @@ Add tests under `src/` (e.g., Vitest, React Testing Library) and wire them into 
 	```
 
 - Always test on a staging project before touching production and back up your database first.
-
-## 🚢 Production build & deploy
-
-1. Ensure `.env` contains production values (URL + anon key).
-2. Run `npm run lint` and `npm run build` locally; confirm output in `dist/` with `npm run preview`.
-3. Upload the `dist/` folder to your hosting provider (Vercel/Netlify/Cloudflare Pages/Supabase Storage) or configure CI to deploy automatically.
-4. Configure environment variables in your hosting dashboard (same keys as `.env`).
-5. If using Supabase for auth/storage, verify RLS policies, OAuth providers, and redirect URLs match production domain(s).
-
-## 🛡️ Production readiness checklist
-
-- [ ] `.env` populated with production credentials and excluded from git
-- [ ] Supabase migrations applied & functions deployed (staging → prod)
-- [ ] ESLint + build succeed (no type or bundling errors)
-- [ ] Dependency audit (`npm audit`) reviewed; critical issues resolved
-- [ ] App smoke-tested end-to-end (auth, voting flows, dashboards)
-- [ ] Monitoring/analytics configured (Sentry, LogRocket, Supabase logs, etc.)
-- [ ] Backups scheduled for Supabase database
-- [ ] Hosting configured with HTTPS, caching, and appropriate headers (CSP, HSTS)
-
-## 🧭 Next steps
-
-- Set up a CI workflow to run lint/build on every pull request (see `.github/workflows/ci.yml` once added).
-- Add automated tests covering the most critical flows.
-- Consider bundle analysis & lazy loading for large components (charts, tables).
 
 Happy shipping! :rocket:
 
