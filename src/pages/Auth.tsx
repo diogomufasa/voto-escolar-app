@@ -86,7 +86,7 @@ export default function Auth() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-primary-hover flex items-center justify-center">
               <Shield className="h-6 w-6 text-white" />
             </div>
-            <img src="/logo-text.png" alt="VotoMarista Logo" className="h-[15vh] w-auto" />
+            <img src="/logo-text.png" alt="VotoEscolar Logo" className="h-[15vh] w-auto" />
           </div>
           <CardTitle>Acesso</CardTitle>
           <CardDescription>

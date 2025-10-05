@@ -91,9 +91,9 @@ export default function ResetPassword() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-primary-hover flex items-center justify-center">
               <Shield className="h-6 w-6 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-foreground">VotoMarista</h1>
+            <img src="/logo-text.png" alt="VotoEscolar Logo" className="h-[15vh] w-auto" />
           </div>
-          <CardTitle>Redefinir Password</CardTitle>
+          <CardTitle>Mudar Password</CardTitle>
           <CardDescription>
             Introduza a sua nova password
           </CardDescription>
@@ -159,7 +159,7 @@ export default function ResetPassword() {
               className="w-full" 
               disabled={loading}
             >
-              {loading ? 'Redefinindo...' : 'Redefinir Password'}
+              {loading ? 'A carregar' : 'Mudar password'}
             </Button>
             <Button 
               type="button" 
