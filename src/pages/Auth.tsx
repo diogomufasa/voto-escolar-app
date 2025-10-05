@@ -131,7 +131,7 @@ export default function Auth() {
               disabled={resetLoading}
               onClick={handleResetPassword}
             >
-              {resetLoading ? 'Enviando...' : 'Esqueci a password'}
+              {resetLoading ? 'A enviar...' : 'Esqueci-me da password'}
             </Button>
           </form>
         </CardContent>
