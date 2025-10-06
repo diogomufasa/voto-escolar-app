@@ -124,7 +124,7 @@ export default function Auth() {
             >
               {loading ? 'A carregar...' : 'Entrar'}
             </Button>
-            <Button 
+            {/* <Button 
               type="button" 
               variant="outline"
               className="w-full" 
@@ -132,7 +132,7 @@ export default function Auth() {
               onClick={handleResetPassword}
             >
               {resetLoading ? 'A enviar...' : 'Esqueci-me da password'}
-            </Button>
+            </Button> */}
           </form>
         </CardContent>
       </Card>
