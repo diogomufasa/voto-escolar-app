@@ -41,10 +41,23 @@ export default function ResetPassword() {
     const tokenHash = searchParams.get('token_hash');
     const type = searchParams.get('type');
     
-    if (!accessToken && !tokenHash && type !== 'recovery') {
-      toast.error('Link de recuperação inválido ou expirado');
-      navigate('/auth');
-    }
+  if (accessToken && refreshToken) {
+    // Set the Supabase session so the user can reset password
+    supabase.auth
+      .setSession({ access_token: accessToken, refresh_token: refreshToken })
+      .then(({ data, error }) => {
+        if (error) {
+          console.error('Session set error:', error);
+          toast.error('Erro ao validar sessão de recuperação');
+          navigate('/auth');
+        } else {
+          console.log('Recovery session set successfully:', data);
+        }
+      });
+  } else if (type !== 'recovery') {
+    toast.error('Link de recuperação inválido ou expirado');
+    navigate('/auth');
+  }
   }, [searchParams, navigate]);
 
   const handleResetPassword = async (e: React.FormEvent) => {
