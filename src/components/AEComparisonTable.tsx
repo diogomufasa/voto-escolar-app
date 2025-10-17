@@ -49,7 +49,7 @@ export function AEComparisonTable({ aes, onVote }: AEComparisonTableProps) {
               </tr>
             </thead>
             <tbody className="divide-y divide-border bg-background">
-              {/* Likes Row */}
+              {/* Likes Row
               <tr>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">
                   <div className="flex items-center gap-2">
@@ -77,7 +77,7 @@ export function AEComparisonTable({ aes, onVote }: AEComparisonTableProps) {
                     )}
                   </td>
                 ))}
-              </tr>
+              </tr> */}
 
               {/* Collaborators Row */}
               <tr>

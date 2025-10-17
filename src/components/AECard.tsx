@@ -70,7 +70,7 @@ export function AECard({ ae, showAdminActions = false, onEdit, onDelete, voteCou
       
       <CardContent className="space-y-5 relative">
         {/* Vote Button */}
-        {onVote && (
+        {/* {onVote && (
           <Button
             variant={hasVoted ? "default" : "outline"}
             size="sm"
@@ -84,7 +84,7 @@ export function AECard({ ae, showAdminActions = false, onEdit, onDelete, voteCou
             <Heart className={`h-4 w-4 mr-2 ${hasVoted ? 'fill-current' : ''} group-hover/vote:scale-110 transition-transform`} />
             Like ({voteCount})
           </Button>
-        )}
+        )} */}
 
         {/* Stats - Enhanced */}
         <div className="flex flex-wrap gap-2">
