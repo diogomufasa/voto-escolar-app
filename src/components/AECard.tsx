@@ -87,12 +87,12 @@ export function AECard({ ae, showAdminActions = false, onEdit, onDelete, voteCou
         )} */}
 
         {/* Stats - Enhanced */}
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2">
           <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1.5">
             <Users className="h-4 w-4" />
             <span className="font-semibold">{ae.num_colaboradores || 0}</span> colaboradores
           </Badge>
-        </div>
+        </div> */}
 
         {/* Proposals - Preview */}
         {ae.propostas && ae.propostas.length > 0 && (

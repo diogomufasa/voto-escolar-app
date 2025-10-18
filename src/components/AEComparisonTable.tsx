@@ -80,7 +80,7 @@ export function AEComparisonTable({ aes, onVote }: AEComparisonTableProps) {
               </tr> */}
 
               {/* Collaborators Row */}
-              <tr>
+              {/* <tr>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">
                   <div className="flex items-center gap-2">
                     <Users className="h-4 w-4 text-primary" />
@@ -92,7 +92,7 @@ export function AEComparisonTable({ aes, onVote }: AEComparisonTableProps) {
                     <span className="text-sm font-semibold">{ae.num_colaboradores || 0}</span>
                   </td>
                 ))}
-              </tr>
+              </tr> */}
 
               {/* Proposals Row */}
               <tr>

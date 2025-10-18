@@ -143,12 +143,12 @@ export default function AEDetails() {
                 )}
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              {/* <div className="flex flex-wrap gap-3">
                 <Badge variant="secondary" className="text-base px-4 py-2">
                   <Users className="h-4 w-4 mr-2" />
                   {ae.num_colaboradores || 0} colaboradores
                 </Badge>
-              </div>
+              </div> */}
 
               {ae.video_url && (
                 <Button size="lg" className="w-full md:w-auto" asChild>
