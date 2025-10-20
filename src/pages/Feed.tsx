@@ -7,6 +7,7 @@ import { Loader2, Trophy, Users, BarChart3 } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Alert } from "@/components/ui/alert";
 
 type AE = Tables<"AEs">;
 type AEWithVotes = AE & { vote_count: number; user_has_voted: boolean };
@@ -151,6 +152,10 @@ export default function Feed() {
 
   return (
     <div className="container mx-auto px-6 py-8 max-w-6xl">
+      <Alert>
+        <strong className="font-medium">Nota:</strong> O debate entre as listas candidatas irá decorrer na próxima <strong>quarta-feira, dia 22 de Outubro, às 13:00</strong>, no espaço celebrativo. Todos os alunos do secundário são convidados a estar presentes para conhecerem melhor as propostas de cada lista antes de votarem!
+      </Alert> 
+
       {/* Hero Section */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-6">
