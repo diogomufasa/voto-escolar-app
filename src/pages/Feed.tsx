@@ -152,6 +152,9 @@ export default function Feed() {
 
   return (
     <div className="container mx-auto px-6 py-8 max-w-6xl">
+      <Alert className="mb-8">
+        <span className="font-medium">Nota:</span> As eleições para a Associação de Estudantes 2025/26 decorrerão entre os dias 15 e 22 de Outubro de 2024. Participa e faz a tua voz ouvir!
+      </Alert>
       {/* Hero Section */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-6">
